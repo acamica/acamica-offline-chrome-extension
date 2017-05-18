@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Acamica Offline",
+  "description": "Configure an acamica local server for offline video access",
+  "version": "1.0",
+  "icons" : {
+      "16": "images/16.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/16.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    },
+    "default_popup": "dialog.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.acamica.com/*", "http://acamica.local/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ]
+}

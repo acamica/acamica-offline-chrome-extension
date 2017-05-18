@@ -1,0 +1,18 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "dialog.html".
+ -->
+<html>
+    <head>
+        <title>Settings</title>
+    </head>
+    <body>
+        <form>
+          <label>Local server address:</label>
+          <input type="text" id="server-address"/>
+        </form>
+        <script src="dialog.js"></script>
+    </body>
+</html>
