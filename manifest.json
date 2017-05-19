@@ -23,9 +23,15 @@
       "js": ["content_script.js"]
     }
   ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
   "permissions": [
-    "activeTab",
     "storage",
-    "https://ajax.googleapis.com/"
+    "webRequest",
+    "tabs",
+    "https://*/"
   ]
 }
