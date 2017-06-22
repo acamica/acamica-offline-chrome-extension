@@ -3,7 +3,7 @@
 
   "name": "Acamica Offline",
   "description": "Configure an acamica local server for offline video access",
-  "version": "1.0",
+  "version": "0.0.1",
   "icons" : {
       "16": "images/16.png",
       "48": "images/48.png",
